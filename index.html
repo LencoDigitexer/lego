@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Инструкции для Lego Mindstorms EV3</title>
+    <link rel="stylesheet" type="text/css" href="css/st.css" />
+    <style>
+      /* Стиль для <marquee> */
+      #bottom-marquee {
+        position: fixed;
+        bottom: 0;
+        right: 0;
+              
+        width: 210px;
+        height: 210px;
+      }
+  
+          @keyframes myAnimation {
+              0% {
+                  bottom: 0;
+                  left: 90%; /* Изменено на 100% */
+                  transform: translate(0) translateY(0);
+              }
+              100% {
+                  bottom: 0;
+                  left: -100%;
+                  transform: translateX(0) translateY(0);
+              }
+          }
+    </style>
+  </head>
+  <body>
+    <canvas id="canvas"></canvas>
+    <a href="index.html" id="logo"></a>
+    <h1>Инструкции для Lego Mindstorms EV3</h1>
+    <p>Всего 137 инструкций.</p>
+    <nav>
+      <ul>
+        <li>
+          <a href="EV3.pdf" class="pdf" target="_blank"
+            >PDF-каталог инструкций</a
+          >
+        </li>
+      </ul>
+    </nav>
+    <h2>Инструкции по тематике</h2>
+    <nav>
+      <ul>
+        <li>
+          <a href="teams/avtomobili-mototsikly-2.htm" class="lst"
+            >Автомобили, мотоциклы [6]</a
+          >
+        </li>
+        <li>
+          <a href="teams/voennaya-tehnika-5.htm" class="lst"
+            >Военная техника [11]</a
+          >
+        </li>
+        <li><a href="teams/dinozavry-17.htm" class="lst">Динозавры [6]</a></li>
+        <li><a href="teams/zhivotnye-4.htm" class="lst">Животные [10]</a></li>
+        <li><a href="teams/ludi-13.htm" class="lst">Люди [4]</a></li>
+        <li><a href="teams/mehanizmy-7.htm" class="lst">Механизмы [49]</a></li>
+        <li>
+          <a href="teams/modeli-dlya-sorevnovaniy-8.htm" class="lst"
+            >Модели для соревнований [1]</a
+          >
+        </li>
+        <li><a href="teams/nasekomye-11.htm" class="lst">Насекомые [2]</a></li>
+        <li>
+          <a href="teams/novogodnie-16.htm" class="lst">Новогодние [1]</a>
+        </li>
+        <li>
+          <a href="teams/ofitsialnye-instruktsii-1.htm" class="lst"
+            >Официальные инструкции [51]</a
+          >
+        </li>
+        <li><a href="teams/rasteniya-10.htm" class="lst">Растения [1]</a></li>
+        <li><a href="teams/risuuschie-9.htm" class="lst">Рисующие [5]</a></li>
+        <li><a href="teams/roboty-3.htm" class="lst">Роботы [17]</a></li>
+        <li>
+          <a href="teams/samolety-vertolety-6.htm" class="lst"
+            >Самолёты, вертолёты [5]</a
+          >
+        </li>
+        <li>
+          <a href="teams/spetstehnika-14.htm" class="lst">Спецтехника [7]</a>
+        </li>
+        <li><a href="teams/telezhki-12.htm" class="lst">Тележки [23]</a></li>
+        <li><a href="teams/shagauschie-18.htm" class="lst">Шагающие [9]</a></li>
+      </ul>
+    </nav>
+    <h2>Инструкции по авторству</h2>
+    <nav>
+      <ul>
+        <li><a href="sources/laumo-2.htm" class="lst">LauMo [20]</a></li>
+        <li>
+          <a href="sources/legodennis-1.htm" class="lst">LegoDennis [26]</a>
+        </li>
+        <li>
+          <a href="sources/proghouse-ru-3.htm" class="lst">proghouse.ru [7]</a>
+        </li>
+        <li>
+          <a href="sources/laboratoriya-znaniy-9.htm" class="lst"
+            >Лаборатория знаний [13]</a
+          >
+        </li>
+      </ul>
+    </nav>
+    <h1>Книги по Lego Mindstorms EV3</h1>
+    <nav>
+      <ul>
+        <li>
+          <a
+            href="books/eun-jung-park-exploring-lego-mindstorms-ev3-tools-and-techniques-for-building-and-programming-robots.pdf"
+            class="pdf"
+            target="_blank"
+            >Eun Jung Park. Exploring LEGO MINDSTORMS EV3. Tools and Techniques
+            for Building and Programming Robots</a
+          >
+        </li>
+        <li>
+          <a
+            href="books/gary-garber-learning-lego-mindstorms-ev3.pdf"
+            class="pdf"
+            target="_blank"
+            >Gary Garber. Learning LEGO MINDSTORMS EV3</a
+          >
+        </li>
+        <li>
+          <a
+            href="books/lu-w-beginning-robotics-programming-in-java-with-lego-mindstorms.pdf"
+            class="pdf"
+            target="_blank"
+            >Lu W. Beginning Robotics Programming in Java with LEGO
+            Mindstorms</a
+          >
+        </li>
+        <li>
+          <a
+            href="books/lorens-valk-bolshaya-kniga-lego-mindstorms-ev3.pdf"
+            class="pdf"
+            target="_blank"
+            >Лоренс Валк. Большая книга Lego Mindstorms EV3</a
+          >
+        </li>
+        <li>
+          <a
+            href="books/rukovodstvo-polzovatelya-lego-mindstorms-ev3.pdf"
+            class="pdf"
+            target="_blank"
+            >Руководство пользователя LEGO Mindstorms EV3</a
+          >
+        </li>
+        <li>
+          <a
+            href="books/serova-u-a-konstruiruem-robotov-na-lego-mindstorms-education-ev3-sbornik-proektov-1.pdf"
+            class="pdf"
+            target="_blank"
+            >Серова Ю.А. Конструируем роботов на Lego Mindstorms Education EV3.
+            Сборник проектов № 1</a
+          >
+        </li>
+        <li>
+          <a
+            href="books/serova-u-a-konstruiruem-robotov-na-lego-mindstorms-education-ev3-sbornik-proektov-2.pdf"
+            class="pdf"
+            target="_blank"
+            >Серова Ю.А. Конструируем роботов на Lego Mindstorms Education EV3.
+            Сборник проектов № 2</a
+          >
+        </li>
+        <li>
+          <a
+            href="books/terri-griffin-iskusstvo-programmirovaniya-lego-mindstorms-ev3.pdf"
+            class="pdf"
+            target="_blank"
+            >Терри Гриффин. Искусство программирования LEGO MINDSTORMS EV3</a
+          >
+        </li>
+      </ul>
+    </nav>
+    <hr />
+    <p>
+      <a href="https://lencodigitexer.github.io/LencoDigitexer/" target="_blank"
+        >Страница автора</a
+      >
+    </p>
+    <br><br><br><br><br><br>
+
+    <marquee id="bottom-marquee" behavior="slide" scrollamount="25">
+      <img id="robot-image" src="robot1.png" width="200px" onclick="changeImageAndMove()">
+    </marquee>
+
+    <script>
+      function changeImageAndMove() {
+        var image = document.getElementById("robot-image");
+        var div = document.getElementById("bottom-marquee");
+  
+        if (image.src.endsWith("robot1.png")) {
+          image.src = "robot2.png";
+          div.style.animation = "myAnimation 10s"
+                  div.style.left = "-100%";
+        }
+      }
+    </script>
+
+    <script  src="js/main.js"></script>
+  </body>
+</html>
