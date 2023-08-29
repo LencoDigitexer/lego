@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Инструкции для Lego Mindstorms EV3</title>
+    <link rel="stylesheet" type="text/css" href="css/st.css" />
+    <style>
+      /* Стиль для <marquee> */
+      #bottom-marquee {
+        position: fixed;
+        bottom: 0;
+        right: 0;
+
+        width: 210px;
+        height: 210px;
+      }
+
+      @keyframes myAnimation {
+        0% {
+          bottom: 0;
+          left: 90%; /* Изменено на 100% */
+          transform: translate(0) translateY(0);
+        }
+        100% {
+          bottom: 0;
+          left: -100%;
+          transform: translateX(0) translateY(0);
+        }
+      }
+    </style>
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript">
+      (function (m, e, t, r, i, k, a) {
+        m[i] =
+          m[i] ||
+          function () {
+            (m[i].a = m[i].a || []).push(arguments);
+          };
+        m[i].l = 1 * new Date();
+        for (var j = 0; j < document.scripts.length; j++) {
+          if (document.scripts[j].src === r) {
+            return;
+          }
+        }
+        (k = e.createElement(t)),
+          (a = e.getElementsByTagName(t)[0]),
+          (k.async = 1),
+          (k.src = r),
+          a.parentNode.insertBefore(k, a);
+      })(
+        window,
+        document,
+        "script",
+        "https://mc.yandex.ru/metrika/tag.js",
+        "ym"
+      );
+
+      ym(94772916, "init", {
+        clickmap: true,
+        trackLinks: true,
+        accurateTrackBounce: true,
+        webvisor: true,
+      });
+    </script>
+    <noscript
+      ><div>
+        <img
+          src="https://mc.yandex.ru/watch/94772916"
+          style="position: absolute; left: -9999px"
+          alt=""
+        /></div
+    ></noscript>
+    <!-- /Yandex.Metrika counter -->
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript">
+      (function (m, e, t, r, i, k, a) {
+        m[i] =
+          m[i] ||
+          function () {
+            (m[i].a = m[i].a || []).push(arguments);
+          };
+        m[i].l = 1 * new Date();
+        for (var j = 0; j < document.scripts.length; j++) {
+          if (document.scripts[j].src === r) {
+            return;
+          }
+        }
+        (k = e.createElement(t)),
+          (a = e.getElementsByTagName(t)[0]),
+          (k.async = 1),
+          (k.src = r),
+          a.parentNode.insertBefore(k, a);
+      })(
+        window,
+        document,
+        "script",
+        "https://mc.yandex.ru/metrika/tag.js",
+        "ym"
+      );
+
+      ym(94772916, "init", {
+        clickmap: true,
+        trackLinks: true,
+        accurateTrackBounce: true,
+        webvisor: true,
+      });
+    </script>
+    <noscript
+      ><div>
+        <img
+          src="https://mc.yandex.ru/watch/94772916"
+          style="position: absolute; left: -9999px"
+          alt=""
+        /></div
+    ></noscript>
+    <!-- /Yandex.Metrika counter -->
+  </head>
+  <body>
+    <canvas id="canvas"></canvas>
+    <a href="index.html" id="logo"></a>
+    <h1>Автор сайта - Евсеенко Илья Николаевич</h1>
+    <p>2023 ©</p>
+    <p>
+      <a href="Lencodigitexer.github.io/LencoDigitexer/" target="_blank"
+        >Страница автора</a
+      >
+    </p>
+    <hr />
+    <p>
+      <a href="../index.html">Вернеться на главную</a>
+    </p>
+    <br /><br /><br /><br /><br /><br />
+
+    <marquee id="bottom-marquee" behavior="slide" scrollamount="25">
+      <img
+        id="robot-image"
+        src="robot1.png"
+        width="200px"
+        onclick="changeImageAndMove()"
+      />
+    </marquee>
+
+    <script>
+      function changeImageAndMove() {
+        var image = document.getElementById("robot-image");
+        var div = document.getElementById("bottom-marquee");
+
+        if (image.src.endsWith("robot1.png")) {
+          image.src = "robot2.png";
+          div.style.animation = "myAnimation 10s";
+          div.style.left = "-100%";
+        }
+      }
+    </script>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>
