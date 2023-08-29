@@ -120,8 +120,6 @@ hr {
 
 .man {
 	display: inline-table;
-	width: 220px;
-	height: 240px;
 	border: 2px solid #e0e0ef;
 	border-radius: 20px;
 	padding: 15px;
